@@ -11,7 +11,6 @@ typedef struct
 	int ocena;
 }TStud;
 
-
 int meni()
 {
 	int odg;
@@ -20,23 +19,21 @@ int meni()
 	{
 		system("cls");
 		printf("\n\n\n");
-		printf("\nProgram za rad sa studentim");
-		printf("\n1. Unos novog studenta");
-		printf("\n2. Ispis unetih studenata");
-		printf("\n3. Pretraga studenata");
-		printf("\n4. Izmena podataka");
-		printf("\n5. Brisanje studenta");
-		printf("\n6. Prosecna ocena");
-		printf("\n7. Sortiranje studenata po broju indeksa (rastuci redosled)");
-		printf("\n8. Sortiranje studenata po broju oceni (opadajuci redosled)");
-		printf("\n0. Kraj");
+		printf("\nProgram za rad sa studentima.");
+		printf("\n1. Unos novog studenta.");
+		printf("\n2. Ispis unetih studenata.");
+		printf("\n3. Pretraga studenata.");
+		printf("\n4. Izmena podataka.");
+		printf("\n5. Brisanje studenta.");
+		printf("\n6. Prosecna ocena.");
+		printf("\n7. Sortiranje studenata po broju indeksa (rastuci redosled).");
+		printf("\n8. Sortiranje studenata po oceni (opadajuci redosled).");
+		printf("\n0. Kraj.");
 		printf("\n\nUnesite opciju:");
 		scanf("%d",&odg);
 	} while(odg<0 || odg >8);
 	return odg;
-
 }
-
 
 int pretragastudenta(TStud* niz,int n, char* bri)
 {
